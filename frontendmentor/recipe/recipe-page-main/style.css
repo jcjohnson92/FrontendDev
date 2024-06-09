@@ -1,0 +1,104 @@
+:root {
+
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+  }
+  
+
+body {
+    margin: 0 auto;
+    background-color: var(--Eggshell);
+
+    Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+}
+#center {
+    /* border: 2px black; */
+    /* border-style: double; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 100px; */
+    padding-bottom: 100px;
+
+
+}
+h3 {
+    color: var(--DarkRaspberry);
+    Family: [Young Serif](https://fonts.google.com/specimen/Young+Serif)
+}
+h2 {
+    color: var(--Nutmeg);
+    Family: [Young Serif](https://fonts.google.com/specimen/Young+Serif)
+}
+#main {
+    margin-top: 100px;
+    border-radius: 1.5em;
+
+    
+}
+div > * {
+    margin: 30px;
+    border-radius: 1.5em;
+
+}
+
+#img {
+    max-width: 93%;
+    width: auto;
+    height: auto;
+}
+#main {
+    background-color: var(--White);
+    width: 50%;
+    /* border-radius: 1.5em; */
+    height: 90%;
+
+}
+p {
+    font-size: 16px;
+}
+
+#prep {
+    background-color: var(--RoseWhite);
+    padding: .5em;
+    margin: 3em;
+}
+table {
+    border-collapse: collapse;
+    width: 90%;
+}
+tr{
+    border-bottom: 1px solid var(--LightGrey);
+
+}
+
+td:nth-child(even) {
+    color:var(--Nutmeg);
+    font-weight: bold;
+
+}
+ol {
+    list-style: none;
+    counter-reset: item;
+}
+ol > li {
+    counter-increment: item;
+}
+ol>li::before{
+    
+    content: counter(item)". ";
+    /* content: "."; */
+    color: var(--Nutmeg);
+    padding-right: 3px;
+}
+
+span {
+    font-weight: bold;
+}
